@@ -4,13 +4,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="churn_prediction",
+    name="churn-ml-project",
     version="0.1.0",
-    author="Mohammad Othman",
+    author="gunasekaran_pandiyan",
     description="A churn prediction project using E2E machine learning pipeline",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/churn_prediction",
+    url="https://github.com/gunasekaranpandiyan/churn-ml-pipeline",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -22,12 +22,12 @@ setup(
     ],
     python_requires=">=3.9",
     install_requires=[
-        "pandas",
+        "pandas==2.3.3",
         "numpy<2.0.0",
-        "scikit-learn",
-        "dill",
-        "xgboost",
-        "Flask",
-        "gunicorn",
+        "scikit-learn==1.7.2",
+        "dill"==0.4.1,
+        "xgboost"==3.2.0,
+        "Flask"==3.1.3,
+        "gunicorn"==25.1.0,
     ],
 )
